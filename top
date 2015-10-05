@@ -1,0 +1,14 @@
+[1mdiff --git a/app/Http/Controllers/LoginController.php b/app/Http/Controllers/LoginController.php[m
+[1mindex 39d736c..d48dfaf 100644[m
+[1m--- a/app/Http/Controllers/LoginController.php[m
+[1m+++ b/app/Http/Controllers/LoginController.php[m
+[36m@@ -34,7 +34,9 @@[m [mclass LoginController extends Controller[m
+ 				'password' => 'required|min:4||max:20' // password can only be alphanumeric and has to be greater than 3 characters[m
+ 			);[m
+ 			$validator = Validator::make(Input::all(), $rules);[m
+[32m+[m[41m			[m
+ 			//$validator1 = JsValidator::make($rules);[m
+[32m+[m[41m			[m
+ 			if ($validator->fails()) {[m
+ 					  return Redirect::to('/login')->withInput(Input::except('password'))->withErrors($validator,'login');// send back the input (not the password) so that we can repopulate the form[m
+ 			}else{ [m

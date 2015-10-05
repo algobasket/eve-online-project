@@ -1,0 +1,28 @@
+{
+  "name": "Eve Garlic",
+  "version": "3.0.0",
+  "homepage": "http://evegarlic.com",
+  "authors": [
+    "Devzila"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public_html/bower_components",  
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.x",
+    "jquery": "~2.1.4",
+    "ngDialog": "~0.3.10",
+    "bootstrap-sass-official": "~3.3.4",
+    "ngInfiniteScroll":"~1.0.0" 
+  },
+  "resolutions": {
+    "angular": "~1.3.x"
+  }
+}
